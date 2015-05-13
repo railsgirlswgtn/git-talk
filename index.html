@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Ducks</title>
+    <title>Git</title>
 
-    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-    <meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="Talk about Git and GitHub for Rails Girls Wellington">
+    <meta name="author" content="Merrin Macleod">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -38,6 +38,86 @@
       <div class="slides">
         <section>
           <h2>Git outta here</h2>
+        </section>
+
+        <section>
+          <h2>Story time!</h2>
+          <section>
+            <h2>Beyoncé and Kim Kardashian are writing a book together</h2>
+          </section>
+          <section>
+            <h2>They use Dropbox to collaborate</h2>
+            <ul>
+              <li>When Beyoncé is NY and Kim is in CA they edit the file at different times</li>
+              <li>The file is always up to date</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Then Beyoncé flies to her home in California</h2>
+            <ul>
+              <li>They're now editing the same file at the same time and it comes up with things like 'Beyoncé's conflicted copy'</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Workflows they try</h2>
+            <ul>
+              <li>They try to set up a workflow where they only save the file sparingly, but Kim's computer crashes when she's working on a chapter about selfies, and it's lost to the world</li>
+              <li>They try saving things into separate work in progress files and only merging them back in when they're ready, but without a good diff tool they don't see the changes that are made throughout the document</li>
+              <li>They try Google Docs but Beyoncé can't edit it while she's on her private jet to Paris</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Kim and Beyoncé, secret Harry Potter superfans</h2>
+            <ul>
+              <li>Harry Potter fanfiction</li>
+            </ul>
+          </section>
+          <section>
+            <h2>They talk to Taylor Swift about their dilemma</h2>
+            <ul>
+              <li>Beyonce talks to Taylor Swift, who is an information security professional, and she suggests they try using Git</li>
+            </ul>
+            <aside class="notes">
+              <p>
+                So Beyonce is in a difficult position. She desperately needs to spend those early hours of the morning writing the Harry Potter fan fiction, but the workflow is making this whole project more stressful than stress relief. Frustrated, she turns to her information security professional friend, Taylor Swift.
+              </p>
+              <p>
+                Taylor Swift, as an information security professional and award winning singer-songwriter, immediately knows the perfect answer to their problem, and she suggests to Beyoncé that they use Git to manage their book.
+              </p>
+              <p>
+                Beyoncé has no idea what that is. Do any of you know?
+              </p>
+              <p>
+                [answers]
+              </p>
+              <p>
+                Unfortunately Beyoncé didn't have anyone as useful as all of you to hand, she just had Taylor Swift, who as a lyricist can speak a little cryptically sometimes. So when Beyoncé asked 'what do you mean by Git?', Taylor Swift replied: 'ask man'. Beyoncé of course was like - what? Ask a man? Do you mean Jay-Z, because he is terrible with computers. And Taylor Swift clarified - no, no, don't ask a man, and especially don't ask Jay-Z. When you want more information about a command line program or command, you can get access to the manual pages by typing in 'man' and then the thing you're confused about.
+              </p>
+              <p>
+                So Beyoncé goes home and she types into her terminal: `man git`.
+              </p>
+              <p>
+                [go to terminal] And she reads: Git - the stupid content tracker.
+              </p>
+              <p>
+                She isn't super sold on the idea. It all seems a bit complicated, and it does describe itself as stupid. But it turns out that Kim Kardashian, Harry Potter super fan, is actually quite comfortable with Git and already has a GitHub account which she uses to contribute to open source software.
+              </p>
+              <p>
+                So Kim creates a repository on GitHub for their fan fiction. Beyoncé *clones* the repository onto her computer and starts writing into fanfiction.md again. 
+              </p>
+              <p>
+                So unlike the systems they tried earlier, saving the document doesn't automatically propagate it to the server. Beyoncé is actually really pleased about this - it means she can 
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h2>Kim and Bey's git workflow</h2>
+            <ul>
+              <li>Each of them has a local copy of the book which they can save as they work on it without it being automatically propagated to the server</li>
+              <li>When they're happy with a change they've done and want to save this state, they commit their changes on their own branch</li>
+              <li>They push this up to github and make a pull request to master. They review each others' changes and merge them</li>
+            </ul>
+          </section>
         </section>
 
         <section>
